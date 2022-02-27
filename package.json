@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "exercise1": "node src/exercise1/index.js",
-    "exercise2-3-4": "node src/exercise2-3-4/index.js"
+    "exercise2-3-4": "node src/exercise2-3-4/index.js",
+    "exercise5-6": "node src/exercise5-6/index.js"
   },
   "repository": {
     "type": "git",
