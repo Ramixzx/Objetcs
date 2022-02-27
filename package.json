@@ -4,7 +4,8 @@
   "description": "Object module Greelow Academy February stage ",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "exercise1": "node src/exercise1/index.js",
+    "exercise2-3-4": "node src/exercise2-3-4/index.js"
   },
   "repository": {
     "type": "git",
