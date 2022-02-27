@@ -1,0 +1,24 @@
+{
+  "name": "objetos",
+  "version": "1.0.0",
+  "description": "Object module Greelow Academy February stage ",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ramixzx/Objetcs.git"
+  },
+  "keywords": [
+    "prototype",
+    "Class",
+    "constructor"
+  ],
+  "author": "Ramiro Elias Mijalovich (Ramixzx)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ramixzx/Objetcs/issues"
+  },
+  "homepage": "https://github.com/Ramixzx/Objetcs#readme"
+}
