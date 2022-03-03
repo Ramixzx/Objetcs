@@ -5,29 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/Calculator.js" type="text/javascript"></script>
+    <script src="./js/Display.js" type="text/javascript"></script>
 </head>
 <body>
     <main>
         <div class="container">
             <div class="calculator">
-                <h2 id="display" class="calculator-display">524</h2>
+                <div id="display" class="calculator-display">
+                    <h3 id="displayFirstValue"></h3>
+                    <h5 id="displaySecondValue"></h5>
+                </div>
                 <div class="calculator-buttons">
-                    <button onclick="printDisplay(event)" id="button-2" class="button-2">2</button>
-                    <button onclick="printDisplay(event)" id="button-1" class="button-1">1</button>
-                    <button onclick="printDisplay(event)" id="button-3" class="button-3">3</button>
-                    <button onclick="printDisplay(event)" id="button-4" class="button-4">4</button>
-                    <button onclick="printDisplay(event)" id="button-5" class="button-5">5</button>
-                    <button onclick="printDisplay(event)" id="button-6" class="button-6">6</button>
-                    <button onclick="printDisplay(event)" id="button-7" class="button-7">7</button>
-                    <button onclick="printDisplay(event)" id="button-8" class="button-8">8</button>
-                    <button onclick="printDisplay(event)" id="button-9" class="button-9">9</button>
-                    <button onclick="printDisplay(event)" id="button-0" class="button-0">0</button>
-                    <button onclick="printDisplay(event)" id="button-igual" class="button-igual">=</button>
-                    <button onclick="printDisplay(event)" id="button-mas" class="button-mas">+</button>
-                    <button onclick="printDisplay(event)" id="button-menos" class="button-menos">-</button>
-                    <button onclick="printDisplay(event)" id="button-divisor" class="button-divisor">%</button>
-                    <button onclick="printDisplay(event)" id="button-multipli" class="button-multipli">*</button>
+                    <button onclick="" class="button number">1</button>
+                    <button onclick="" class="button number">2</button>
+                    <button onclick="" class="button number">3</button>
+                    <button onclick="" class="button operator" value="addition">+</button>
+                    <button onclick="" class="button number">4</button>
+                    <button onclick="" class="button number">5</button>
+                    <button onclick="" class="button number">6</button>
+                    <button onclick="" class="button operator" value="subtraction">-</button>
+                    <button onclick="" class="button number">7</button>
+                    <button onclick="" class="button number">8</button>
+                    <button onclick="" class="button number">9</button>
+                    <button onclick="" class="button operator" value="division">%</button>
+                    <button onclick="display.delateDisplay()" class="button operator">C</button>
+                    <button onclick="" class="button number">0</button>
+                    <button onclick="" class="button operator" value="equal">=</button>
+                    <button onclick="" class="button operator" value="multiply">*</button>
+                    <button onclick="" class="button specialOperator">MR</button>
+                    <button onclick="" class="button specialOperator">MC</button>
+                    <button onclick="" class="button specialOperator">M+</button>
+                    <button onclick="" class="button specialOperator">M-</button>
                 </div>
             </div>
         </div>
