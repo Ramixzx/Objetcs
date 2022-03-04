@@ -6,6 +6,12 @@ class Display {
         this.typeOperation = undefined;
         this.firstValue = '';
         this.secondValue = '';
+        this.symbols = {
+            addition: '+',
+            subtraction: '-',
+            multiply: '*',
+            division: '/'
+        };
     }
 
     delateDisplay() {
@@ -16,23 +22,26 @@ class Display {
     }
 
     inputValue(number) {
-        this.firstValue += number;
+        this.firstValue = this.firstValue.toString() + number.toString();
         this.printValue();
     }
 
     printValue() {
-        this.displayFirstValue.textContent = this.firstValue;
-        this.displaySecondValue.textContent = this.secondValue;
+        this.displaySecondValue.textContent = this.firstValue;
+        this.displayFirstValue.textContent = `${this.secondValue} ${this.symbols[this.typeOperation] || ''}` ;
     }
 
     calculate() {
-        if( isNaN(this.firstValue) || isNaN(this.secondValue)) return
-        this.firstValue = this.calculator[this.typeOperation](this.firstValue, this.secondValue);
+        let firstValue = parseFloat(this.firstValue);
+        let secondValue = parseFloat(this.secondValue);
+
+        if(isNaN(firstValue) || isNaN(secondValue)) return
+        this.firstValue = this.calculator[this.typeOperation](secondValue, firstValue);
     }
 
     resolve(type) {
-        this.typeOperation != 'equal' && this.calculate();
-        this.typeOperation = tipo;
+        this.typeOperation !== 'equal' && this.calculate();
+        this.typeOperation = type;
         this.secondValue = this.firstValue || this.secondValue;
         this.firstValue = '';
         this.printValue();
