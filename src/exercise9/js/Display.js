@@ -46,4 +46,23 @@ class Display {
         this.firstValue = '';
         this.printValue();
     }
+
+    MR() {
+        this.memoryRetrieve = parseFloat(this.displayFirstValue.textContent) || 0;
+        console.log(this.memoryRetrieve)
+    }
+
+    MC() {
+        this.memoryRetrieve = 0;
+    }
+
+    MAddition() {
+        let newValue = parseFloat(this.displayFirstValue.textContent) + this.memoryRetrieve;
+        this.displayFirstValue.textContent = newValue;
+    }
+
+    MSubtraction() {
+        let newValue = parseFloat(this.displayFirstValue.textContent) - this.memoryRetrieve;
+        this.displayFirstValue.textContent = newValue;
+    }
 }
